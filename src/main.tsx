@@ -11,6 +11,15 @@ import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 // - Very Dark Blue: hsl(216, 12%, 8%)
 // - Orange: hsl(25, 97%, 53%)
 
+const breakpoints = {
+  base: "0px",
+  sm: "375px",
+  md: "460px",
+  lg: "960px",
+  xl: "1200px",
+  "2xl": "1536px",
+};
+
 const theme = extendTheme({
   colors: {
     background: {
@@ -26,6 +35,7 @@ const theme = extendTheme({
       very_dark: 'hsl(216, 12%, 8%)'
     }
   },
+  breakpoints
 })
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

@@ -21,7 +21,7 @@ const RatingInput = (props: RatingInputProps) => {
                     return (
                         <Circle size={'3rem'}
                             bgColor={props.rating === r ? 'grey.medium' : 'blue.dark'}
-                            key={ratingId}
+                            key={ratingId + r}
                             onClick={() => { handleRatingChange(r) }}
                             _hover={{ bgColor: 'primary', color: 'white' }}
                             color={props.rating === r ? 'white' : 'grey.ligth'}
