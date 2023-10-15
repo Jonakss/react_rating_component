@@ -1,34 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { Box, Center, Grid } from '@chakra-ui/react'
+import RatingPanel from './rating'
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <Grid
+      h='200px'
+      templateRows='1fr auto'
+      templateColumns='auto'
+      gap={4}
+      bgColor={'background'} 
+      minH="100vh" 
+      w={'100vw'} 
+      justifyContent={'center'}>
+      <Center>
+        <RatingPanel />
+      </Center>
+      <Box py={'1rem'} as={'footer'} className="attribution" justifySelf={'flex-end'}>
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/Jonakss">Jonathan Correa | Jonakss</a>.
+      </Box>
+    </Grid>
   )
 }
 
