@@ -2,8 +2,6 @@ import './App.css'
 import { Box, Center, Flex, Grid } from '@chakra-ui/react'
 import RatingPanel from './rating'
 
-
-
 function App() {
   return (
     <Grid
@@ -15,7 +13,7 @@ function App() {
       minW={'375px'}
       w={'100vw'} 
       justifyContent={'center'}>
-      <Center>
+      <Center as='main'>
         <RatingPanel />
       </Center>
       <Flex py={'1rem'} as={'footer'} className="attribution" alignItems={'center'} justifySelf={'center'} direction={{base: 'column', md: 'row'}} gap={2}>

@@ -34,7 +34,7 @@ export const RatingPanel = (props: RatingPanelProps) => {
             {!submmited ? 
             <VStack justifyContent={'space-around'} alignItems={'left'}>
                 <Circle size='2.75rem' bg='hsl(213, 19%, 18%)' color='white'>
-                    <Image src={iconStar}></Image>
+                    <Image alt="rating_star" src={iconStar}></Image>
                 </Circle>
                 <VStack alignItems={'left'}>
                     <Heading fontSize={'1.75rem'} fontFamily={'Overpass'} fontWeight={800}>How did we do?</Heading>
