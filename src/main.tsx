@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
-import { ChakraBaseProvider, extendTheme } from '@chakra-ui/react'
+import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 
 // - White: hsl(0, 0%, 100%)
 // - Light Grey: hsl(217, 12%, 63%)
@@ -23,11 +23,11 @@ const breakpoints = {
 
 
 const theme = extendTheme({
-    initialColorMode: 'dark',
-    useSystemColorMode: false,
+  initialColorMode: 'dark',
+  useSystemColorMode: false,
   colors: {
     background: {
-      base: "blue.very_dark",
+      base: "hsl(216, 12%, 8%)",
     },
     primary: 'hsl(25, 97%, 53%)',
     grey: {
@@ -44,8 +44,8 @@ const theme = extendTheme({
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <ChakraBaseProvider theme={theme}>
-      <App/>
-    </ChakraBaseProvider>
+    <ChakraProvider theme={theme}>
+      <App />
+    </ChakraProvider>
   </React.StrictMode>,
 )

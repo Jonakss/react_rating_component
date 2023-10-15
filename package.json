@@ -1,7 +1,7 @@
 {
   "name": "react_rating_component",
   "private": true,
-  "version": "0.0.0",
+  "version": "v1.0.0",
   "type": "module",
   "homepage": "https://jonakss.github.io/react_rating_component/",
   "scripts": {
