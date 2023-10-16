@@ -8,7 +8,7 @@ function App() {
       templateRows='1fr'
       templateColumns='auto'
       gap={4}
-      bgColor={'background'} 
+      bgColor={'blue.dark'} 
       minH="100vh" 
       minW={'375px'}
       w={'100vw'} 
@@ -18,7 +18,7 @@ function App() {
       <Center as='main'>
         <RatingPanel />
       </Center>
-      <Flex py={'1rem'} as={'footer'} className="attribution" alignItems={'center'} justifySelf={'center'} direction={{base: 'column', md: 'row'}} gap={2} position={'absolute'} bottom={0}>
+      <Flex py={'1rem'} as={'footer'} className="attribution" alignItems={'center'} justifySelf={'center'} direction={{base: 'column', md: 'row'}} gap={2} position={'absolute'} bottom={0} color={'white'}>
         <Box>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</Box>
         <Box>Coded by <a href="https://github.com/Jonakss">Jonathan Correa | Jonakss</a>.</Box>
       </Flex>

@@ -37,7 +37,7 @@ export const RatingPanel = (props: RatingPanelProps) => {
                     <Image alt="rating_star" src={iconStar}></Image>
                 </Circle>
                 <VStack alignItems={'left'}>
-                    <Heading fontSize={'1.75rem'} fontFamily={'Overpass'} fontWeight={800}>How did we do?</Heading>
+                    <Heading fontSize={'1.75rem'} fontFamily={'Overpass'} fontWeight={800} color={'white'}>How did we do?</Heading>
                     <Text color={'grey.medium'} fontFamily={'Overpass'} fontWeight={400} fontSize={'15px'} overflow={'hidden'}>  Please let us know how we did with your support request. All feedback is appreciated
                         to help us improve our offering!</Text>
                 </VStack>
